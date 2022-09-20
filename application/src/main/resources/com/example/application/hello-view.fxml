@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.application.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" >
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <Button layoutX="62.0" layoutY="345.0" mnemonicParsing="false" text="Button" />
+            <Slider layoutX="18.0" layoutY="87.0" />
+            <Slider layoutX="18.0" layoutY="154.0" />
+            <Slider layoutX="18.0" layoutY="225.0" />
+            <Label layoutX="23.0" layoutY="51.0" prefHeight="17.0" prefWidth="127.0" text="Label" />
+            <Label layoutX="20.0" layoutY="121.0" prefHeight="17.0" prefWidth="127.0" text="Label" />
+            <Label layoutX="20.0" layoutY="182.0" prefHeight="17.0" prefWidth="127.0" text="Label" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="423.0">
+         <children>
+            <Button layoutX="335.0" layoutY="27.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="247.0" layoutY="27.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="157.0" layoutY="27.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="59.0" layoutY="27.0" mnemonicParsing="false" text="Button" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
