@@ -14,37 +14,18 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
-public class HelloController {
-    @FXML
-    private Label welcomeText;
+public class Hello {
 
     @FXML
-    private AnchorPane root_paf;
+    private Button Start_scen;
 
-    @FXML
-    private Button Butt;
-
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to Application!");
-    }
-
-    @FXML
-    private void loadwin(ActionEvent event) throws IOException {
-
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene path = new Scene(fxmlLoader.load(),600, 400);
-        Stage stage = new Stage();
-        stage.setScene(path);
-        stage.show();
-    }
 
     public void setButt() {
-        Butt.setOnAction(event -> {
-            Butt.getScene().getWindow().hide();
+        Start_scen.setOnAction(event -> {
+            Start_scen.getScene().getWindow().hide();
 
             FXMLLoader fxmlLoader = new FXMLLoader();
-            fxmlLoader.setLocation(getClass().getResource("hello-view.fxml"));
+            fxmlLoader.setLocation(getClass().getResource("start-win.fxml"));
 
             try {
                 fxmlLoader.load();
