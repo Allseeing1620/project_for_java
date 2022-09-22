@@ -6,21 +6,21 @@
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" >
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.application.Hello">
   <items>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
          <children>
             <Button layoutX="62.0" layoutY="345.0" mnemonicParsing="false" text="Button" />
-            <Slider layoutX="18.0" layoutY="87.0" />
-            <Slider layoutX="18.0" layoutY="154.0" />
-            <Slider layoutX="18.0" layoutY="225.0" />
-            <Label layoutX="23.0" layoutY="51.0" prefHeight="17.0" prefWidth="127.0" text="Label" />
+            <Slider layoutX="18.0" layoutY="61.0" showTickLabels="true" />
+            <Slider layoutX="18.0" layoutY="154.0" showTickLabels="true" />
+            <Slider layoutX="18.0" layoutY="255.0" showTickLabels="true" />
+            <Label layoutX="18.0" layoutY="23.0" prefHeight="17.0" prefWidth="42.0" text="Label" />
             <Label layoutX="20.0" layoutY="121.0" prefHeight="17.0" prefWidth="127.0" text="Label" />
-            <Label layoutX="20.0" layoutY="182.0" prefHeight="17.0" prefWidth="127.0" text="Label" />
+            <Label layoutX="20.0" layoutY="222.0" prefHeight="17.0" prefWidth="127.0" text="Label" />
          </children></AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="423.0">
          <children>
-            <Button layoutX="335.0" layoutY="27.0" mnemonicParsing="false" text="Button" />
+            <Button fx:id="Start_scen" layoutX="335.0" layoutY="27.0" mnemonicParsing="false" onAction="#setButt" text="домой" />
             <Button layoutX="247.0" layoutY="27.0" mnemonicParsing="false" text="Button" />
             <Button layoutX="157.0" layoutY="27.0" mnemonicParsing="false" text="Button" />
             <Button layoutX="59.0" layoutY="27.0" mnemonicParsing="false" text="Button" />
